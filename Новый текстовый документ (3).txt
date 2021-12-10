@@ -1,0 +1,26 @@
+//В диапозоне от a до b найти числа, сумма цифр которых не меняется при возведении в квадрат
+#include <iostream>
+using namespace std;
+ 
+int sz (int n)
+{
+    int sum=0;
+    while (n>0)
+      {
+        sum+=n%10;
+        n=n/10;
+      }
+    return sum;
+}
+ 
+int main()
+{
+    int a,b;
+    cin >> a>>b;
+    for (int i = a; i < b; i++) {
+        if (sz(i)==sz(i*i)){
+            cout<<i<<"  ";
+        }
+    }
+return 0;
+}

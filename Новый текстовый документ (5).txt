@@ -1,0 +1,16 @@
+//Утка и лиса
+#include <iostream>
+#include <math.h>
+using namespace std;
+const double PI = 3.141592653589793238463;
+int main()
+{
+    int r, n;
+    cin>> r >> n;
+    double a,b;
+    a=r;
+    b=((PI*r)/n);
+    if (a>b) cout<<"Успеет";
+    else cout<< "Не успеет";
+return 0;
+}

@@ -1,0 +1,37 @@
+//попарно сложить цифры числа и сравнить с 9
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    
+    cin >> a;
+    
+    int k;
+    
+    int b = a % 100;
+    a = a/100;
+    int c = a % 100;
+    a = a/100;
+    int d = a % 100;
+    a = a/100;
+    int e = a % 100;
+
+    int f = b % 10;
+    b = b / 10;
+    int g = c % 10;
+    c = c / 10;
+    int h = d % 10;
+    d = d / 10;
+    int l = e % 10;
+    e = e / 10;
+    k = (b + f) + (g+c) + (h+d) + (l+e);
+    if (k==9)  cout << "Ответ - Да" << std::endl;
+    if (k!=9)  cout << "Ответ - Нет" << std::endl;
+    
+    
+    
+    return 0;
+}
